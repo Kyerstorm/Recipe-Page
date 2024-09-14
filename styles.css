@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: 'Outfit';
+    font-family: Outfit;
     margin: 0;
     background-color: var(--Stone-100);
     display: flex;
@@ -36,22 +36,65 @@ body {
 
 .content-container {
     background-color: var(--White);
-    width: 500px;
-    padding: 20px;
+    width: 600px;
+    padding: 25px;
     margin-top: 100px;
+    border-radius: 20px;
 }
 
 @media (max-width: 1280px) {
     .content-container {
         margin-top: 0;
+        padding: 0;
     }
 }
 
-img {
-    width: 450px;
+.image {
+    width: 100%;
+    border-radius: 20px;
 }
 
+#title {
+    font-family: Young-Serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
 
+.description {
+    font-size: 13px;
+}
+
+.prep-container {
+    background-color: var(--Rose-50);
+    padding: 10px 0 10px 20px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+.prep-list > .list-item::marker,
+.prep-title {
+    color: var(--Rose-800);
+    font-weight: 600;
+}
+
+.list-item::marker {
+    position: relative;
+    left: 20px;
+}
+
+.list-item {
+    line-height: 2rem;
+}
+
+.list-bold {
+    font-weight: 600;
+}
+
+.section-title {
+    font-family: Young-Serif;
+    font-weight: 400;
+    color: var(--Brown-800);
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
